@@ -14,6 +14,12 @@ Document.cpp
 Uncopyable.cpp
 /mnt/c/Ana/Facultate/An4/IEP/tema1/classes/Uncopyable.cpp
 
+/mnt/c/Ana/Facultate/An4/IEP/tema1/classes/Buletin.cpp
+iostream
+-
+Act.cpp
+/mnt/c/Ana/Facultate/An4/IEP/tema1/classes/Act.cpp
+
 /mnt/c/Ana/Facultate/An4/IEP/tema1/classes/Document.cpp
 iostream
 -
@@ -25,6 +31,6 @@ iostream
 /mnt/c/Ana/Facultate/An4/IEP/tema1/main.cpp
 iostream
 -
-classes/Act.cpp
-/mnt/c/Ana/Facultate/An4/IEP/tema1/classes/Act.cpp
+classes/Buletin.cpp
+/mnt/c/Ana/Facultate/An4/IEP/tema1/classes/Buletin.cpp
 

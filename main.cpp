@@ -1,5 +1,6 @@
 #include <iostream>
-#include "classes/Act.cpp"
+#include "classes/Buletin.cpp"
+#include "classes/Bilet.cpp"
 using namespace std;
 int main()
 {
@@ -9,6 +10,15 @@ int main()
     a1.print();
     d1 = &a1;
     d1->print(); // polimorfism
+
+    Buletin b1("Ana", 1999, "Timisoara", "TZ", 12345);
+    b1.print();
+
+    Bilet bilet1("Madonna"), bilet2;
+    bilet2 = bilet1;
+    Bilet bilet3(bilet1);
+    cout << "Biletul 2 pentru concertul: " << bilet2.getConcertName();
+    cout << "Biletul 3 pentru concertul: " << bilet3.getConcertName();
 
     return 0;
 }
