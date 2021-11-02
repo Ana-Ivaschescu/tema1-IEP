@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/Ana/Facultate/An4/IEP/tema1/classes/Act.cpp
+iostream
+-
+Document.cpp
+/mnt/c/Ana/Facultate/An4/IEP/tema1/classes/Document.cpp
+Uncopyable.cpp
+/mnt/c/Ana/Facultate/An4/IEP/tema1/classes/Uncopyable.cpp
+
+/mnt/c/Ana/Facultate/An4/IEP/tema1/classes/Document.cpp
+iostream
+-
+
+/mnt/c/Ana/Facultate/An4/IEP/tema1/classes/Uncopyable.cpp
+iostream
+-
+
+/mnt/c/Ana/Facultate/An4/IEP/tema1/main.cpp
+iostream
+-
+classes/Act.cpp
+/mnt/c/Ana/Facultate/An4/IEP/tema1/classes/Act.cpp
+
