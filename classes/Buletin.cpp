@@ -12,9 +12,7 @@ public:
     Buletin(string name, int birthDate, string address, string serie, int numar);
     void print()
     {
-    Act:
-        print();
-        cout << " cu buletinul cu seria si nr. " << serie << " " << numar << endl;
+        cout << ", avand buletinul cu seria si nr. " << serie << " " << numar << endl;
     }
 };
 

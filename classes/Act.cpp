@@ -12,7 +12,7 @@ protected:
 
 public:
     Act(string name, int birthDate, string address);
-    void print()
+    virtual void print()
     {
         cout << "Acesta este un act detinut de " << name << " nascut/a in " << address << " in anul " << birthDate << endl;
     }

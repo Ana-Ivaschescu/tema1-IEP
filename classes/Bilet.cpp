@@ -25,6 +25,10 @@ public:
     {
         return this->concertName;
     }
+    void setConcertName(string newName)
+    {
+        this->concertName = newName;
+    }
 };
 Bilet::Bilet(string concertName)
     : concertName(concertName)
