@@ -10,8 +10,6 @@ private:
     Cod *cod = new Cod();
 
 public:
-    int *drinks;
-    size_t n;
     Bilet(){};
     Bilet(string concertName, Cod *cod);
     Bilet(const Bilet &bilet)

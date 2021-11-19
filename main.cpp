@@ -21,5 +21,11 @@ int main()
     Bilet bilet4(bilet1);
     cout << "Biletul 3 pentru concertul: " << bilet3.getConcertName() << endl;
     bilet2.printCode();
+
+    CodQR cod1(1234), cod2;
+    cod1.setCod(3);
+    cout << cod1.getCod() << endl;
+    cod2 = cod1;
+    cout << cod2.getCod() << endl;
     return 0;
 }
