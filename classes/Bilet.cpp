@@ -1,24 +1,36 @@
 #include <iostream>
 #include "Document.cpp"
+#include "Cod.cpp"
 using namespace std;
 
 class Bilet : public Document
 {
 private:
     string concertName;
+    Cod *cod = new Cod();
 
 public:
+    int *drinks;
+    size_t n;
     Bilet(){};
-    Bilet(string concertName);
+    Bilet(string concertName, Cod *cod);
     Bilet(const Bilet &bilet)
     {
         this->concertName = bilet.concertName;
+        this->cod = bilet.cod;
         cout << "Copy constructor" << endl;
     }
     Bilet &operator=(const Bilet &bilet)
     {
+        if (this == &bilet) //self-assignment safe
+        {
+            cout << "Assignment to self tried!" << endl;
+            return *this;
+        }
+        Cod *codOld = cod; //exception safe
+        cod = new Cod(*bilet.cod);
+        delete codOld;
         this->concertName = bilet.concertName;
-        cout << "Copy assignment operator" << endl;
         return *this;
     }
     string getConcertName()
@@ -29,8 +41,13 @@ public:
     {
         this->concertName = newName;
     }
+    void printCode()
+    {
+        cout << cod->cod << endl;
+    }
 };
-Bilet::Bilet(string concertName)
-    : concertName(concertName)
+Bilet::Bilet(string concertName, Cod *cod)
+    : concertName(concertName),
+      cod(cod)
 {
 }

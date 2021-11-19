@@ -15,13 +15,11 @@ int main()
     b1.Act::print();
     b1.print();
 
-    Bilet bilet1("Madonna"), bilet2;
-    bilet2 = bilet1;
-    Bilet bilet3(bilet1);
-    cout << "Biletul 2 pentru concertul: " << bilet2.getConcertName() << endl;
+    Bilet bilet1("Madonna", new Cod(12)), bilet2("Abba", new Cod(10)), bilet3;
+    bilet3 = bilet2 = bilet1;
+    bilet1 = bilet1;
+    Bilet bilet4(bilet1);
     cout << "Biletul 3 pentru concertul: " << bilet3.getConcertName() << endl;
-    bilet1.setConcertName("P!nk");
-    cout << "Biletul 2 pentru concertul: " << bilet2.getConcertName() << endl;
-
+    bilet2.printCode();
     return 0;
 }

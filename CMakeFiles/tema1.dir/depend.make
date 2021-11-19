@@ -4,6 +4,7 @@
 CMakeFiles/tema1.dir/main.cpp.o: classes/Act.cpp
 CMakeFiles/tema1.dir/main.cpp.o: classes/Bilet.cpp
 CMakeFiles/tema1.dir/main.cpp.o: classes/Buletin.cpp
+CMakeFiles/tema1.dir/main.cpp.o: classes/Cod.cpp
 CMakeFiles/tema1.dir/main.cpp.o: classes/Document.cpp
 CMakeFiles/tema1.dir/main.cpp.o: classes/Uncopyable.cpp
 CMakeFiles/tema1.dir/main.cpp.o: main.cpp
