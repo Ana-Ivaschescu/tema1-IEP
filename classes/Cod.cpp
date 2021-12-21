@@ -7,6 +7,10 @@ public:
     int cod;
     Cod(int cod);
     Cod(){};
+    ~Cod()
+    {
+        std::cout << "Destroyed entity" << std::endl;
+    }
     Cod(const Cod &cod1)
     {
         this->cod = cod1.cod;
@@ -24,6 +28,7 @@ public:
 Cod::Cod(int cod)
     : cod(cod)
 {
+    std::cout << "Created entity" << std::endl;
 }
 
 class CodQR : public Cod

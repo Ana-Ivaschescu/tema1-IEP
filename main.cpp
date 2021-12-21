@@ -1,10 +1,11 @@
 #include <iostream>
+#include <memory>
 #include "classes/Buletin.cpp"
 #include "classes/Bilet.cpp"
 using namespace std;
 int main()
 {
-    Document *d1;
+    /*Document *d1;
     Act a1("Ana", 1999, "Timisoara");
     //Act a2 = a1; am sters copy constructorul, deci nu se poate face
     a1.print();
@@ -26,6 +27,23 @@ int main()
     cod1.setCod(3);
     cout << cod1.getCod() << endl;
     cod2 = cod1;
-    cout << cod2.getCod() << endl;
+    cout << cod2.getCod() << endl;*/
+
+    {
+        std::unique_ptr<Cod> cod = std::make_unique<Cod>(3);
+        cout << cod->getCod() << endl;
+    }
+    {
+        std::shared_ptr<Cod> cod0;
+        {
+            std::shared_ptr<Cod> sharedCod = std::make_shared<Cod>(2);
+            cout << "sharedCod count = " << sharedCod.use_count() << endl;
+            cod0 = sharedCod;
+            cout << "sharedCod count = " << sharedCod.use_count() << endl;
+            cod0->setCod(0);
+            cout << sharedCod->getCod() << endl;
+        }
+        cout << "----------" << endl;
+    }
     return 0;
 }
