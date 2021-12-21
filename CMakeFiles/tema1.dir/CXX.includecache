@@ -6,35 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/mnt/c/Ana/Facultate/An4/IEP/tema1/classes/Act.cpp
+/mnt/c/Ana/Facultate/An4/IEP/tema1/classes/Cod.cpp
 iostream
 -
-Document.cpp
-/mnt/c/Ana/Facultate/An4/IEP/tema1/classes/Document.cpp
+
+/mnt/c/Ana/Facultate/An4/IEP/tema1/classes/Lock.cpp
+iostream
+-
 Uncopyable.cpp
 /mnt/c/Ana/Facultate/An4/IEP/tema1/classes/Uncopyable.cpp
-
-/mnt/c/Ana/Facultate/An4/IEP/tema1/classes/Bilet.cpp
-iostream
--
-Document.cpp
-/mnt/c/Ana/Facultate/An4/IEP/tema1/classes/Document.cpp
 Cod.cpp
 /mnt/c/Ana/Facultate/An4/IEP/tema1/classes/Cod.cpp
-
-/mnt/c/Ana/Facultate/An4/IEP/tema1/classes/Buletin.cpp
-iostream
--
-Act.cpp
-/mnt/c/Ana/Facultate/An4/IEP/tema1/classes/Act.cpp
-
-/mnt/c/Ana/Facultate/An4/IEP/tema1/classes/Cod.cpp
-iostream
--
-
-/mnt/c/Ana/Facultate/An4/IEP/tema1/classes/Document.cpp
-iostream
--
 
 /mnt/c/Ana/Facultate/An4/IEP/tema1/classes/Uncopyable.cpp
 iostream
@@ -45,8 +27,6 @@ iostream
 -
 memory
 -
-classes/Buletin.cpp
-/mnt/c/Ana/Facultate/An4/IEP/tema1/classes/Buletin.cpp
-classes/Bilet.cpp
-/mnt/c/Ana/Facultate/An4/IEP/tema1/classes/Bilet.cpp
+classes/Lock.cpp
+/mnt/c/Ana/Facultate/An4/IEP/tema1/classes/Lock.cpp
 

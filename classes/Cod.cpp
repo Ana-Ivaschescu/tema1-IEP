@@ -5,6 +5,7 @@ class Cod
 {
 public:
     int cod;
+    bool isLocked = false;
     Cod(int cod);
     Cod(){};
     ~Cod()
@@ -22,6 +23,21 @@ public:
     void setCod(int cod)
     {
         this->cod = cod;
+    }
+    void setLocked(bool isLocked)
+    {
+        this->isLocked = isLocked;
+    }
+    void isCodLocked()
+    {
+        if (this->isLocked)
+        {
+            cout << "Resursa cod e blocata" << endl;
+        }
+        else
+        {
+            cout << "Resursa cod poate fi folosita" << endl;
+        }
     }
 };
 

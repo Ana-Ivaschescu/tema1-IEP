@@ -1,7 +1,6 @@
 #include <iostream>
 #include <memory>
-#include "classes/Buletin.cpp"
-#include "classes/Bilet.cpp"
+#include "classes/Lock.cpp"
 using namespace std;
 int main()
 {
@@ -45,5 +44,12 @@ int main()
         }
         cout << "----------" << endl;
     }
+
+    cout << endl;
+    Cod cod(10);
+    Lock *lock = new Lock(cod);
+    cod.isCodLocked();
+    delete lock;
+    cod.isCodLocked();
     return 0;
 }
